@@ -28,7 +28,7 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    protected $hidden = [
+    protected $hidden = [ // 当一些不怀好意的用户将类似 is_admin 这样的字段也嵌入到表单中进行提交时，会有怎样的后果
         'password',
         'remember_token',
     ];
